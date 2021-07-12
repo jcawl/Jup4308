@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Nav from './components/Nav'
+import Swiper from './components/Swiper'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="nav-container">
+        <Nav />
+      </div>
+      <div className="slider-container">
+        <Swiper />
+      </div>
+      <div className="footer-container">
+        <ul>4308 Fairway Drive North</ul>
+        <ul>Jupiter, FL 33477</ul>
+        <ul>3 Bed | 2 Bath</ul>
+      </div>
     </div>
   );
 }
